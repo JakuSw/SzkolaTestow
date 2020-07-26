@@ -6,7 +6,7 @@ module.exports = class VatService{
 
     getGrossPrice(netPrice, vatValue){
         if(vatValue >= 1){
-            throw new Error("Vat must be lower!");
+            throw "Vat must be lower!";
         }else{
             return (netPrice * (1 + vatValue));
         }
