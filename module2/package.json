@@ -1,17 +1,14 @@
 {
-  "name": "tests",
+  "name": "module2",
   "version": "1.0.0",
   "description": "",
-  "main": "firstTest.js",
+  "main": "main.js",
   "scripts": {
     "test": "jest"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "jest": "^26.1.0"
-  },
   "dependencies": {
-    "package.json": "^2.0.1"
+    "jest": "^26.1.0"
   }
 }
