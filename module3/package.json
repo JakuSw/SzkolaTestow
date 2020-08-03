@@ -1,0 +1,11 @@
+{
+  "name": "module3",
+  "version": "1.0.0",
+  "description": "Bowling kata from https://codingdojo.org/kata/Bowling/",
+  "main": "bowling.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
