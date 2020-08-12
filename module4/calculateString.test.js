@@ -33,6 +33,6 @@ test('Calculator should error and print negative numbers in string', () => {
     expect(calculateString('-1,2')).toBe('Negative not allowed : -1');
 });
 
-test('Calculator should return multiple errors', () => {
+test('Calculator should return multiple errors, negative number and separator after separator', () => {
     expect(calculateString('-1,,2')).toBe(String.raw`Negative not allowed : -1Number expected but ',' found at position 3`);
 });
