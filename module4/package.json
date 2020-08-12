@@ -1,0 +1,11 @@
+{
+  "name": "module4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculateString.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
