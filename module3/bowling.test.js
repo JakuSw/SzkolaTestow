@@ -24,7 +24,7 @@ describe('Bowlimg game test', () =>{
         expect(game.getScore()).toBe(20);
     });
 
-    test('Should return 20 when spare, 4 and 2 knocked', () => {
+    test('Should return correct score when spare during game', () => {
         game.roll(7);
         game.roll(3);
         game.roll(4)
@@ -33,7 +33,7 @@ describe('Bowlimg game test', () =>{
         expect(game.getScore()).toBe(20);
     });
     
-    test('Should return 28 when strike, 3 and 6 knocked', () => {
+    test('Should return correct score when strike during game', () => {
         game.roll(10);
         game.roll(3);
         game.roll(6);
@@ -41,15 +41,6 @@ describe('Bowlimg game test', () =>{
         expect(game.getScore()).toBe(28);
     });
 
-    test('Should return 35 when 2,5,strike, 3 and 6 knocked', () => {
-        game.roll(2);
-        game.roll(5);
-        game.roll(10);
-        game.roll(3);
-        game.roll(6);
-        rollGivenTimes(0,14);
-        expect(game.getScore()).toBe(35);
-    });
 
     test('Should return 300 when all throws are strike', () => {
         rollGivenTimes(10,12);
